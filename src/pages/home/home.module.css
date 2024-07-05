@@ -1,0 +1,155 @@
+.container {
+  margin: 0 14px;
+}
+.form {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.form input {
+  border: 0;
+  border-radius: 4px;
+  height: 44px;
+  outline: none;
+  padding: 0 8px;
+  width: 100%;
+}
+.form button {
+  background: transparent;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+table caption {
+  font-size: 16px;
+  margin: 0.5em 0 0.75em;
+}
+th {
+  color: #fff;
+}
+.tr {
+  background-color: #08141b;
+}
+td:first-child,
+th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+td:last-child,
+th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+table th,
+table td {
+  padding: 14px;
+  text-align: center;
+}
+.tdLabel {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tdProfit {
+  color: #12f98a;
+  font-weight: bold;
+}
+.tdLoss {
+  color: #f91257;
+  font-weight: bold;
+}
+
+.buttonMore{
+	background-color: #F24141;
+	padding: 8px 24px;
+	color: #fff;
+	margin: 14px 0;
+	border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.buttonMore:hover {
+  background-color: #05F2DB;
+  color: #011826;
+}
+
+.logo {
+	width: 20px;
+	height: 20px;
+	transition: all 1s;
+}
+
+.logo:hover {
+	transform: scale(1.5);
+	z-index: 99;
+}
+
+.name {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+
+}
+
+.cripto{
+  transition: color 0.5s ease;
+}
+
+.cripto:hover {
+  color: #05F2DB;
+}
+
+
+/* RESPONSIVIDADE TABELA */
+@media screen and (max-width: 600px) {
+
+  .name img{
+    margin-left: 14px;
+  
+  }
+  
+  table {
+    border: 0;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .tr {
+    border-bottom: 1px solid #000;
+    display: block;
+    margin-bottom: 14px;
+  }
+  table td {
+    border-bottom: 1px solid #rgba(221, 221, 221, 0.17);
+    display: block;
+    font-size: 14px;
+    text-align: right;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table:td:last-child {
+    border-radius: 0px;
+  }
+  td:first-child,
+  th:first-child {
+    border-radius: 0;
+  }
+  td:last-child,
+  th:last-child {
+    border-radius: 0;
+  }
+}
